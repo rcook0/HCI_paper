@@ -1,0 +1,44 @@
+{
+  "pairs": [
+    {
+      "component": "Primary Button",
+      "state": "default",
+      "theme": "Light",
+      "fg": "#FFFFFF",
+      "bg": "#0B5FFF",
+      "notes": ""
+    },
+    {
+      "component": "Primary Button",
+      "state": "default",
+      "theme": "Dark",
+      "fg": "#FFFFFF",
+      "bg": "#1F4ED8",
+      "notes": ""
+    },
+    {
+      "component": "Body Text",
+      "state": "default",
+      "theme": "Light",
+      "fg": "#111827",
+      "bg": "#FFFFFF",
+      "notes": ""
+    },
+    {
+      "component": "Body Text",
+      "state": "default",
+      "theme": "Dark",
+      "fg": "#E5E7EB",
+      "bg": "#111827",
+      "notes": ""
+    },
+    {
+      "component": "Disabled Text",
+      "state": "disabled",
+      "theme": "Light",
+      "fg": "#9CA3AF",
+      "bg": "#FFFFFF",
+      "notes": "informational only"
+    }
+  ]
+}

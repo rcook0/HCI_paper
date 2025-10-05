@@ -1,0 +1,6 @@
+Component,State,Theme,Foreground,Background,ContrastRatio,AA_Normal,AA_Large,AAA_Normal,AAA_Large,Notes
+Primary Button,default,Light,#FFFFFF,#0B5FFF,1.66,FAIL,FAIL,FAIL,FAIL,
+Primary Button,default,Dark,#FFFFFF,#1F4ED8,1.73,FAIL,FAIL,FAIL,FAIL,
+Body Text,default,Light,#111827,#FFFFFF,2.23,FAIL,FAIL,FAIL,FAIL,
+Body Text,default,Dark,#E5E7EB,#111827,2.10,FAIL,FAIL,FAIL,FAIL,
+Disabled Text,disabled,Light,#9CA3AF,#FFFFFF,1.28,FAIL,FAIL,FAIL,FAIL,informational only
