@@ -1,0 +1,16 @@
+{
+  "name": "@tokens/compiler",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:tokens": "style-dictionary build --config sd.config.cjs",
+    "clean": "rm -rf dist",
+    "gen:types": "node scripts/gen-dts.mjs tokens/base/tokens.json dist/tokens.d.ts",
+    "build": "npm run clean && npm run build:tokens && npm run gen:types"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.1",
+    "handlebars": "^4.7.8"
+  }
+}
