@@ -1,0 +1,11 @@
+:root[data-theme="dark"] {
+  --border-default: #374151;
+  --button-bg: #1F4ED8;
+  --button-fg: #FFFFFF;
+  --color-bg: #111827;
+  --color-primary: #1F4ED8;
+  --color-primary-on: #FFFFFF;
+  --color-text: #E5E7EB;
+  --surface-bg: #111827;
+  --surface-text: #E5E7EB;
+}

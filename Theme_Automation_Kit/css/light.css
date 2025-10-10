@@ -1,0 +1,11 @@
+:root[data-theme="light"] {
+  --border-default: #E5E7EB;
+  --button-bg: #0B5FFF;
+  --button-fg: #FFFFFF;
+  --color-bg: #FFFFFF;
+  --color-primary: #0B5FFF;
+  --color-primary-on: #FFFFFF;
+  --color-text: #111827;
+  --surface-bg: #FFFFFF;
+  --surface-text: #111827;
+}

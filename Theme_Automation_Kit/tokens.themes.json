@@ -1,0 +1,43 @@
+{
+  "themes": {
+    "light": {
+      "color": {
+        "text": "#111827",
+        "bg": "#FFFFFF",
+        "primary": "#0B5FFF",
+        "primary_on": "#FFFFFF"
+      },
+      "border": {
+        "default": "#E5E7EB"
+      }
+    },
+    "dark": {
+      "color": {
+        "text": "#E5E7EB",
+        "bg": "#111827",
+        "primary": "#1F4ED8",
+        "primary_on": "#FFFFFF"
+      },
+      "border": {
+        "default": "#374151"
+      }
+    },
+    "high-contrast": {
+      "color": {
+        "text": "#FFFFFF",
+        "bg": "#000000",
+        "primary": "#FFFF00",
+        "primary_on": "#000000"
+      },
+      "border": {
+        "default": "#FFFFFF"
+      }
+    }
+  },
+  "aliases": {
+    "button.fg": "{color.primary_on}",
+    "button.bg": "{color.primary}",
+    "surface.text": "{color.text}",
+    "surface.bg": "{color.bg}"
+  }
+}

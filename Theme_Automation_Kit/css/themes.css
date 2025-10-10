@@ -1,0 +1,44 @@
+:root[data-theme="light"] {
+  --border-default: #E5E7EB;
+  --button-bg: #0B5FFF;
+  --button-fg: #FFFFFF;
+  --color-bg: #FFFFFF;
+  --color-primary: #0B5FFF;
+  --color-primary-on: #FFFFFF;
+  --color-text: #111827;
+  --surface-bg: #FFFFFF;
+  --surface-text: #111827;
+}
+
+:root[data-theme="dark"] {
+  --border-default: #374151;
+  --button-bg: #1F4ED8;
+  --button-fg: #FFFFFF;
+  --color-bg: #111827;
+  --color-primary: #1F4ED8;
+  --color-primary-on: #FFFFFF;
+  --color-text: #E5E7EB;
+  --surface-bg: #111827;
+  --surface-text: #E5E7EB;
+}
+
+:root[data-theme="high-contrast"] {
+  --border-default: #FFFFFF;
+  --button-bg: #FFFF00;
+  --button-fg: #000000;
+  --color-bg: #000000;
+  --color-primary: #FFFF00;
+  --color-primary-on: #000000;
+  --color-text: #FFFFFF;
+  --surface-bg: #000000;
+  --surface-text: #FFFFFF;
+}
+
+:root { color-scheme: light dark; }
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) { color-scheme: light; }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) { color-scheme: dark; }
+}

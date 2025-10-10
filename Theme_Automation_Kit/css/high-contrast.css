@@ -1,0 +1,11 @@
+:root[data-theme="high-contrast"] {
+  --border-default: #FFFFFF;
+  --button-bg: #FFFF00;
+  --button-fg: #000000;
+  --color-bg: #000000;
+  --color-primary: #FFFF00;
+  --color-primary-on: #000000;
+  --color-text: #FFFFFF;
+  --surface-bg: #000000;
+  --surface-text: #FFFFFF;
+}
