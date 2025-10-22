@@ -1,0 +1,46 @@
+name: UI Quality Suite
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tokens:
+    uses: ./.github/workflows/tokens-build.yml
+
+  contrast:
+    runs-on: ubuntu-latest
+    needs: tokens
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download token artifacts
+        uses: actions/download-artifact@v4
+        with: { name: design-tokens-dist, path: dist }
+      - name: Run contrast checks
+        run: |
+          python3 ./contrast_cli.py ./tokens.sample.json ./contrast_results.csv
+      - name: Upload contrast results
+        uses: actions/upload-artifact@v4
+        with:
+          name: contrast-results
+          path: contrast_results.csv
+
+  screenshots:
+    runs-on: ubuntu-latest
+    needs: [tokens, contrast]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Install deps
+        run: |
+          npm ci
+          npx playwright install --with-deps
+      - name: Run screenshot tests
+        run: npm run test:screenshots
+      - name: Upload diffs
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-screenshot-diff
+          path: artifacts/**
